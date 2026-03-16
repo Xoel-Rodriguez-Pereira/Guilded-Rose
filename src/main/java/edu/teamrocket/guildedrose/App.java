@@ -1,4 +1,4 @@
-package edu.teamrocket.guildedRoses;
+package edu.teamrocket.guildedrose;
 
 /**
  * Hello world!

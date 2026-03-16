@@ -1,8 +1,8 @@
-package edu.teamrocket.guildedRose;
+package edu.teamrocket.guildedrose;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
 
 /**
  * Unit test for simple App.
