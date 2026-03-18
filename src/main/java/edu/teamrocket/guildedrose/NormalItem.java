@@ -30,15 +30,34 @@ public class NormalItem implements Updateable {
         return this.item.getSellIn();
     }
 
+    void setSellIn() {
+        this.item.setSellIn();
+    }
+
     public int getQuality() {
         return this.item.getQuality();
     }
 
-    @Override
-    public void updateQuality() {
 
+    void computeQuality(int value) {
+        if (getQuality() + value > 50) {
+            this.item.setQuality(50); 
+        } else if (getQuality() + value >= 0) {
+            this.item.setQuality(getQuality() + value);
+        } else {
+            this.item.setQuality(0);
+        }
     }
 
+    @Override
+    public void updateQuality() {
+        if (getSellIn() > 0) {
+            computeQuality(-1);
+        }
+        else {
+            computeQuality(-2);
+        }
 
-
+        setSellIn();
+    }
 }

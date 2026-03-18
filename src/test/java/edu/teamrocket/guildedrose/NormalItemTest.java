@@ -10,7 +10,7 @@ public class NormalItemTest {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 20);
         assertEquals("+5 Dexterity Vest", normal.getName());
-        assertEquals(10, normal.getSell_in(), 0);
+        assertEquals(10, normal.getSellIn(), 0);
         assertEquals(20, normal.getQuality(), 0);
     }
 
@@ -25,7 +25,7 @@ public class NormalItemTest {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 20);
         normal.updateQuality();
-        assertEquals(9, normal.getSell_in(), 0);
+        assertEquals(9, normal.getSellIn(), 0);
         assertEquals(19, normal.getQuality(), 0);
     }
 
@@ -34,7 +34,7 @@ public class NormalItemTest {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 0, 20);
         normal.updateQuality();
-        assertEquals(-1, normal.getSell_in(), 0);
+        assertEquals(-1, normal.getSellIn(), 0);
         assertEquals(18, normal.getQuality(), 0);    
     }
 
@@ -43,7 +43,7 @@ public class NormalItemTest {
 
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 0);
         normal.updateQuality();
-        assertEquals(9, normal.getSell_in(), 0);
+        assertEquals(9, normal.getSellIn(), 0);
         assertEquals(0, normal.getQuality(), 0);
     }
 }

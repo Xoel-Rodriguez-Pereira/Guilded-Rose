@@ -40,7 +40,7 @@ final class Item {
     public String toString() {
         StringBuilder itemDescription = new StringBuilder();
         itemDescription.append("name=" + getName());
-        itemDescription.append(", sell_in=" + getSellIn());
+        itemDescription.append(", sellIn=" + getSellIn());
         itemDescription.append(", quality=" + getQuality());
         return itemDescription.toString();
     }
