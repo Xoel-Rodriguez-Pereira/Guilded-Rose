@@ -6,6 +6,7 @@ public class AgedBrie extends NormalItem {
         super(name, sellIn, quality);
     }
 
+    @Override
     public void updateQuality() {
         if (getSellIn() > 0) {
             computeQuality(+1);
