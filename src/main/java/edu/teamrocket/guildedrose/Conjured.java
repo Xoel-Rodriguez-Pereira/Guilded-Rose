@@ -14,6 +14,8 @@ public class Conjured extends NormalItem{
         } else {
             computeQuality(-4);
         }
+
+        setSellIn();
     }
 
 
